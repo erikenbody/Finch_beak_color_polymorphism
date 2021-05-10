@@ -1,0 +1,36 @@
+Sample,Species,Island,Year,Sex,Developmental_stage,SNP_depth,Num G reads,Num A reads,FPKM,taqman.Genotype,Inferred.Genotype,ratioAG
+sample_LG-13-1,Geospiza magnirostris,Pinta,2014,F,32,8,7,1,7.612516,GA,GA,0.361
+sample_LG-13-3,Geospiza magnirostris,Pinta,2014,M,31-32,3,0,3,2.508528,AA,AA,
+sample_LG-13-5,Geospiza magnirostris,Pinta,2014,F,34,21,21,0,13.550364,GG,GG,
+sample_LG-13-6,Geospiza magnirostris,Pinta,2014,F,34-35,26,26,0,13.082655,,GG,
+sample_LG-15-2,Geospiza magnirostris,Pinta,2015,F,32,16,16,0,7.340757,GG,GG,
+sample_LG-15-4,Geospiza magnirostris,Pinta,2015,F,33,22,22,0,7.215547,GG,GG,
+sample_LT-14-3,Camarhynchus psittacula,Pinta,2014,F,32,16,16,0,8.083132,GG,GG,
+sample_LT-14-4,Camarhynchus psittacula,Pinta,2014,F,35,2,0,2,2.384633,,AA,
+sample_LT-14-7,Camarhynchus psittacula,Pinta,2014,F,34,18,9,9,10.090467,GA,GA,0.964
+sample_LT-15-1,Camarhynchus psittacula,Pinta,2015,M,33-34,16,16,0,4.783892,GG,GG,
+sample_LT-15-2,Camarhynchus psittacula,Pinta,2015,F,34,10,10,0,6.186926,GG,GG,
+sample_LT-15-5,Camarhynchus psittacula,Pinta,2015,M,32,26,26,0,7.763957,GG,GG,
+sample_LT-15-6,Camarhynchus psittacula,Pinta,2015,M,33-34,45,45,0,18.500864,GG,GG,
+sample_LT-15-8,Camarhynchus psittacula,Pinta,2015,F,35-36,59,34,25,18.437564,GA,GA,0.782
+sample_MG-13-1,Geospiza fortis,Santa Cruz,2013,F,32,26,21,5,5.157148,GA,GA,0.413
+sample_MG-14-3,Geospiza fortis,Pinta,2014,M,33,20,20,0,9.579403,,GG,
+sample_MG-14-4,Geospiza fortis,Pinta,2014,F,32,15,15,0,7.850989,GG,GG,
+sample_MG-14-7,Geospiza fortis,Pinta,2014,M,33-34,17,16,1,9.10848,,GG,
+sample_MG-15-2,Geospiza fortis,Pinta,2015,F,32,32,32,0,11.042957,GG,GG,
+sample_MG-15-5,Geospiza fortis,Pinta,2015,M,32,35,35,0,9.657032,GG,GG,
+sample_MG-15-6,Geospiza fortis,Pinta,2015,F,32,42,41,1,10.4681,GG,GG,
+sample_SG-13-1,Geospiza fuliginosa,Santa Cruz,2013,F,32,17,7,10,8.047555,,GA,1.067
+sample_SG-13-5,Geospiza fuliginosa,Santa Cruz,2013,M,32,17,17,0,6.558018,GG,GG,
+sample_SG-15-2,Geospiza fuliginosa,Pinta,2015,F,32,43,43,0,11.00929,GG,GG,
+sample_SG-15-3,Geospiza fuliginosa,Pinta,2015,F,32,35,35,0,11.545132,GG,GG,
+sample_SG-15-4,Geospiza fuliginosa,Pinta,2015,F,34,34,34,0,9.017506,GG,GG,
+sample_SG-15-6,Geospiza fuliginosa,Pinta,2015,F,32,7,0,7,3.859729,AA,AA,
+sample_SG-15-7,Geospiza fuliginosa,Pinta,2015,F,33,30,30,0,10.401774,GG,GG,
+sample_ST-13-1,Camarhynchus parvulus,Santa Cruz,2013,M,32,5,2,3,3.329617,GA,GA,0.717
+sample_VF-14-1,Platyspiza crassirostris,Pinta,2014,M,30,9,9,0,7.276686,GG,GG,
+sample_VF-14-2,Platyspiza crassirostris,Pinta,2014,F,32,9,9,0,6.430225,,GG,
+sample_VF-14-4,Platyspiza crassirostris,Pinta,2014,F,32,17,17,0,10.373546,GG,GG,
+sample_VF-14-5,Platyspiza crassirostris,Pinta,2014,F,31-32,27,27,0,8.070991,GG,GG,
+sample_VF-15-3,Platyspiza crassirostris,Pinta,2015,F,33,69,69,0,15.368921,GG,GG,
+sample_VF-15-6,Platyspiza crassirostris,Pinta,2015,F,34,55,55,0,12.41041,GG,GG,
