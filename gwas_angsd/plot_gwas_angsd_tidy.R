@@ -159,13 +159,13 @@ ggsave("output/gwas_angsd/fortis_scandens_LRT_recessive_chr24_COMBINED_balanced.
 
 # mafs --------------------------------------------------------------------
 
-df.fortis.yellow <- read.table(gzfile("data/gwas_angsd/Results_af/fortis_yellow_chr24_BALANCED.ref.mafs.gz"), header = T) %>%
+df.fortis.yellow <- read.table(gzfile("data/angsd_af/fortis_yellow_chr24_BALANCED.ref.mafs.gz"), header = T) %>%
   mutate(type = "fortis_yellow")
-df.fortis.pink <- read.table(gzfile("data/gwas_angsd/Results_af/fortis_pink_chr24_BALANCED.ref.mafs.gz"), header = T) %>%
+df.fortis.pink <- read.table(gzfile("data/angsd_af/fortis_pink_bams_SUBSET_chr24_BALANCED.ref.mafs.gz"), header = T) %>%
   mutate(type = "fortis_pink")
-df.scandens.yellow <- read.table(gzfile("data/gwas_angsd/Results_af/scandens_yellow_chr24_BALANCED.ref.mafs.gz"), header = T) %>%
+df.scandens.yellow <- read.table(gzfile("data/angsd_af/scandens_yellow_chr24_BALANCED.ref.mafs.gz"), header = T) %>%
   mutate(type = "scandens_yellow")
-df.scandens.pink <- read.table(gzfile("data/gwas_angsd/Results_af/scandens_pink_chr24_BALANCED.ref.mafs.gz"), header = T) %>%
+df.scandens.pink <- read.table(gzfile("data/angsd_af/scandens_pink_bams_SUBSET_chr24_BALANCED.ref.mafs.gz"), header = T) %>%
   mutate(type = "scandens_pink")
 
 df.all.af <- rbind(df.fortis.yellow, df.fortis.pink, df.scandens.yellow, df.scandens.pink)

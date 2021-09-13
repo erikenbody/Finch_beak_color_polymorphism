@@ -20,16 +20,15 @@ INTERVAL_FILE=/crex/proj/snic2020-2-19/private/darwins_finches/variants/INCLUDE_
 WORK_D=/crex/proj/snic2020-2-19/private/darwins_finches/users/erikenbody/Finch_BCO2/angsd/revision_2021
 cd $WORK_D
 
-INTERVAL=`cat $INTERVAL_FILE | awk -v line=$SLURM_ARRAY_TASK_ID '{if (NR == line) print $0}'`
+INTERVAL=chr24
 echo $INTERVAL
 #24 and chr24 is BC02
 
 if [ -d "Results_af" ]; then echo "Results file exists" ; else mkdir Results_af; fi
-
 POP1=fortis_yellow
-POP2=fortis_pink
+POP2=fortis_pink_bams_SUBSET
 POP3=scandens_yellow
-POP4=scandens_pink
+POP4=scandens_pink_bams_SUBSET
 
 
 SITES=top_snps_fortis_scandens_balanced.txt
@@ -41,16 +40,16 @@ $ANGSD_PATH/angsd -b $BAMLIST1 -ref $REFGENOME -anc $ANCESTRAL -r $INTERVAL -sit
               -out Results_af/${POP1}_${INTERVAL}_BALANCED.ref \
               -uniqueOnly 1 -remove_bads 1 -only_proper_pairs 0 -trim 0 \
               -minMapQ 20 -minQ 20 -doCounts 1 \
-              -domajorminor 5 -domaf 2 \
+              -domajorminor 4 -domaf 2 \
               -GL 1 -P 5 -SNP_pval 1e-6
 
-BAMLIST1=${POP2}_bams.txt
+BAMLIST1=${POP2}.txt
 
 $ANGSD_PATH/angsd -b $BAMLIST1 -ref $REFGENOME -anc $ANCESTRAL -r $INTERVAL -sites $SITES \
               -out Results_af/${POP2}_${INTERVAL}_BALANCED.ref \
               -uniqueOnly 1 -remove_bads 1 -only_proper_pairs 0 -trim 0 \
               -minMapQ 20 -minQ 20 -doCounts 1 \
-              -domajorminor 5 -domaf 2 \
+              -domajorminor 4 -domaf 2 \
               -GL 1 -P 5 -SNP_pval 1e-6
 
 BAMLIST1=${POP3}_bams.txt
@@ -59,14 +58,14 @@ $ANGSD_PATH/angsd -b $BAMLIST1 -ref $REFGENOME -anc $ANCESTRAL -r $INTERVAL -sit
               -out Results_af/${POP3}_${INTERVAL}_BALANCED.ref \
               -uniqueOnly 1 -remove_bads 1 -only_proper_pairs 0 -trim 0 \
               -minMapQ 20 -minQ 20 -doCounts 1 \
-              -domajorminor 5 -domaf 2 \
+              -domajorminor 4 -domaf 2 \
               -GL 1 -P 5 -SNP_pval 1e-6
 
-BAMLIST1=${POP4}_bams.txt
+BAMLIST1=${POP4}.txt
 
 $ANGSD_PATH/angsd -b $BAMLIST1 -ref $REFGENOME -anc $ANCESTRAL -r $INTERVAL -sites $SITES \
               -out Results_af/${POP4}_${INTERVAL}_BALANCED.ref \
               -uniqueOnly 1 -remove_bads 1 -only_proper_pairs 0 -trim 0 \
               -minMapQ 20 -minQ 20 -doCounts 1 \
-              -domajorminor 5 -domaf 2 \
+              -domajorminor 4 -domaf 2 \
               -GL 1 -P 5 -SNP_pval 1e-6
